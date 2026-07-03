@@ -4,6 +4,8 @@ Game **Snake** klasik bergaya **retro CRT** (layar hijau + scanline) yang dibuat
 
 ![Retro Snake](https://img.shields.io/badge/HTML-Vanilla_JS-39ff8a?style=flat-square) ![No Dependencies](https://img.shields.io/badge/dependencies-0-2fa34d?style=flat-square)
 
+### 🎮 Main sekarang → **[ahmadarif-snake-retro.surge.sh](https://ahmadarif-snake-retro.surge.sh)**
+
 ## ✨ Fitur
 
 - 🕹️ **Tampilan retro** — nuansa monitor CRT hijau lengkap dengan efek *scanline*, *glow*, dan *vignette*.
@@ -34,15 +36,16 @@ python3 -m http.server 8000
 # lalu buka http://localhost:8000
 ```
 
-## 🌐 Deploy ke GitHub Pages
+## 🌐 Deploy
 
-Karena ini file statis mandiri, cukup:
+Karena ini file statis mandiri (**tanpa build**), bisa di-host di mana saja. Demo live saat ini memakai **[Surge](https://surge.sh)**:
 
-1. Push repo ini ke GitHub.
-2. Buka **Settings → Pages → Source: Deploy from a branch → Branch: `main` / `/(root)`**.
-3. Game live di `https://<username>.github.io/snake-games-retro/`.
+```bash
+npm install -g surge
+surge .                       # ikuti prompt, pilih domain *.surge.sh
+```
 
-File `.nojekyll` sudah disertakan agar GitHub Pages menyajikan file apa adanya.
+Alternatif lain: **Netlify Drop** (seret folder ke app.netlify.com/drop), **Cloudflare Pages**, atau **GitHub Pages** (Settings → Pages → Deploy from a branch → `main` / `/(root)`). File `.nojekyll` sudah disertakan agar GitHub Pages menyajikan file apa adanya.
 
 ## 🛠️ Teknologi
 
